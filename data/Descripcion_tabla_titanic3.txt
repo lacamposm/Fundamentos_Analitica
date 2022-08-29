@@ -1,0 +1,89 @@
+NOMBRE: titanic3
+TIPO: Censo
+TAMAÑO: 1309 Pasajeros, 14 Variables
+
+RESUMEN DESCRIPTIVO: La tabla de datos titanic3 describe el estado de la supervivencia
+de los pasajeros en el Titanic. Los datos de titanic3
+marco no contiene información para la tripulación, pero contiene
+edades reales y estimadas de casi el 80% de los pasajeros.
+
+FUENTES: Hind, Philip. "Enciclopedia Titanica". En línea. Internet.
+notario público. 02 de agosto de 1999. Disponible en http://atschool.eduweb.co.uk/phind
+
+
+VARIABLE DESCRIPTIONS:
+
+pclass          Clase del pasajero.
+                (1 = 1st; 2 = 2nd; 3 = 3rd).
+survival        Supervivencia
+                (0 = No; 1 = Yes).
+name            Nombre.
+sex             Sexo.
+age             Edad.
+sibsp           Numero de hermanos/cónyuges a bordo (esposa/prome).
+parch           Numero de padres/hijos a bordo (par / hijo).
+ticket          Numero del Ticket.
+fare            Tarifa pagada.
+cabin           Cabina.
+embarked        Puerto de embarque.
+                (C = Cherbourg;Q=Queenstown; S=Southampton).
+boat            Bote salva vidas.
+body            Numero de identificación del cuerpo.
+home.dest       Destination. 
+
+
+
+NOTAS ESPECIALES:
+
+pclass es un proxy del estatus socioeconómico (SES)
+ 1 ° ~ Superior; 2do ~ Medio; 3 ° ~ Inferior
+
+La edad está en años; Fraccional si la edad es menor de uno (1)
+ Si se estima la edad, tiene el formato xx.5
+
+La tarifa es en libras esterlinas anteriores a 1970 (£)
+ Factores de conversión: 1 £ = 12s = 240d y 1s = 20d
+
+
+Con respecto a las variables de relación familiar (es decir, sibsp y parch)
+algunas relaciones fueron ignoradas. Las siguientes son las definiciones utilizadas
+para sibsp y parch.
+
+Sibling: hermano, hermana, hermanastro o hermanastra del pasajero a bordo del Titanic
+Spouse: Esposo o esposa del pasajero a bordo del Titanic (Amantes y prometidas ignoradas)
+Parent: Madre o padre del pasajero a bordo del Titanic
+Child: hijo, hija, hijastro o hijastra del pasajero a bordo del Titanic
+
+Otros parientes familiares excluidos de este estudio incluyen primos,
+sobrinos/sobrinas, tías/tíos y suegros. Algunos niños viajaron
+sólo con una niñera, por lo tanto parch = 0 para ellos. Además, algunos
+viajó con amigos muy cercanos o vecinos en un pueblo, sin embargo,
+las definiciones no apoyan tales relaciones.
+
+HISTORIA DETRÁS DE LOS DATOS:
+Este conjunto de datos se basa en la Lista de pasajeros del Titanic editada por Michael.
+A. Findlay, publicado originalmente en Eaton & Haas (1994) Titanic:
+Triumph and Tragedy, Patrick Stephens Ltd, y se expandió con la ayuda
+de la comunidad de Internet. Los archivos HTML originales fueron obtenidos por
+Philip Hind (1999).
+
+NOTAS PEDAGÓGICAS:
+Este conjunto de datos es ideal para enseñar funciones básicas en el
+ámbito de la Computación Estadística y Gráficos. También puede resultar útil
+en la enseñanza de regresión logística binaria y métodos de imputación, tanto
+único y múltiple. El conjunto de datos también es útil para demostrar
+muchas de las funciones disponibles en estos software, así como demostrar
+el análisis de regresión logística binaria.
+
+REFERENCIAS:
+Harrell FE. "Predicción de resultados: análisis de supervivencia aplicado y
+Regresión logística ". Manuscrito del libro disponible en la Universidad
+de la Librería de Virginia, 1999.
+
+PRESENTADO POR:
+Thomas E. Cason, asistente de investigación de pregrado
+División de Bioestadística y Epidemiología
+Departamento de Ciencias de la Evaluación de la Salud
+Facultad de Medicina de la Universidad de Virginia
+Box 600, Charlottesville, VA 22908 EE. UU.
+Correo electrónico: tcason@virginia.edu
