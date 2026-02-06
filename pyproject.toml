@@ -1,0 +1,21 @@
+[project]
+name = "fundamentos-analitica"
+version = "0.1.0"
+description = "Curso de Fundamentos de Estadística para Analítica de Datos"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "seaborn",
+    "scipy",
+    "statsmodels",
+    "scikit-learn",
+    "jupyterlab",
+    "notebook",
+    "openpyxl"
+]
+
+[tool.setuptools]
+packages = []
