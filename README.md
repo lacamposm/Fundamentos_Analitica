@@ -1,7 +1,6 @@
 # Fundamentos de Estadística para Analítica de Datos
 
-![Banner](https://github.com/lacamposm/Metodos-Estadisticos/raw/main/assets/banner.png) 
-*(Nota: Reemplazar con banner propio o eliminar si no aplica)*
+![Banner](images/sequoia.jpg)
 
 Este repositorio contiene el material y código fuente para el curso de **Fundamentos de Estadística para Analítica de Datos**, perteneciente a la Maestría en Analítica de Datos de la Facultad de Ingeniería y Ciencias Básicas.
 

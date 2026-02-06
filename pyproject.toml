@@ -12,6 +12,7 @@ dependencies = [
     "scipy",
     "statsmodels",
     "scikit-learn",
+    "unidecode",
     "jupyterlab",
     "notebook",
     "openpyxl"
