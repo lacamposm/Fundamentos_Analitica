@@ -1,6 +1,8 @@
-# Fundamentos de Estadística para Analítica de Datos
+<h1 align="center">Fundamentos de Estadística para Analítica de Datos</h1>
 
-![Banner](images/sequoia.jpg)
+<p align="center">
+    <img src="images/readme.jpg" alt="Course repository" width="600" style="max-width: 100%; height: auto;" />
+</p>
 
 Este repositorio contiene el material y código fuente para el curso de **Fundamentos de Estadística para Analítica de Datos**, perteneciente a la Maestría en Analítica de Datos de la Facultad de Ingeniería y Ciencias Básicas.
 
@@ -19,45 +21,73 @@ Al finalizar el curso, el estudiante habrá desarrollado competencias para inves
 
 ## 3. Contenido Temático
 
-El curso se divide en los siguientes módulos detallados:
+El curso recorre los siguientes conceptos, alineados con los notebooks del repositorio:
 
-### Conceptos básicos
-*   Naturaleza de las variables.
-*   Medidas de tendencia, dispersión y localización.
-*   Probabilidad conceptual.
-*   Introducción a software estadístico (Python).
+### Introducción a Python y herramientas
+*   Jupyter Notebooks (flujo de trabajo en cuadernos).
+*   Tipos de datos y estructuras básicas en Python.
+*   Estructuras de control y funciones.
+*   Manejo numérico con `numpy`.
+*   Manipulación de datos con `pandas`.
+*   Importación/lectura de información (archivos tabulares y otros formatos).
 
-### Naturaleza del Análisis Exploratorio de Datos (EDA)
-*   Lista de verificación y formulación de preguntas de análisis.
-*   Lectura de datos.
+### Estadística descriptiva y EDA
+*   Ideas y conceptos base de estadística descriptiva.
+*   Histogramas y comportamiento distribucional.
+*   Medidas de tendencia central, dispersión y localización.
+*   Datos categóricos (tablas y proporciones).
+*   Descripción bivariada (asociación, comparación y visualización).
 
-### Principios del análisis gráfico
-*   Comportamientos distribucionales, tendencias y sesgos.
-*   Identificación y depuración de valores atípicos.
-*   Análisis comparativo.
+### Probabilidad y variables aleatorias
+*   Probabilidad y axiomas básicos.
+*   Probabilidad condicional y teorema de Bayes.
+*   Variables aleatorias (discretas y continuas).
+*   Distribuciones y familias comunes (incluyendo Chi-cuadrado, t y F).
 
-### Principios del análisis tabular
-*   Tablas de distribución univariadas y tablas de contingencia.
+### Inferencia estadística
+*   Pruebas t (t de Student) y análisis de hipótesis.
+*   Pruebas Chi-cuadrado (bondad de ajuste e independencia, según el notebook).
 
-### Muestreo e Inferencia
-*   Tópicos de muestreo y pruebas clásicas de hipótesis.
+### Modelamiento: regresión
+*   Regresión lineal simple.
+*   Regresión lineal (Part I–IV): estimación, interpretación, diagnóstico y extensiones prácticas.
+*   Regresión logística.
 
-### Pruebas de hipótesis de distribución libre
-*   Test de Wald, Estadísticos Chi-Cuadrado, Test de Permutaciones y bondad de ajuste.
+> Nota: los notebooks se encuentran como `Lectura_*.ipynb` (temas de estadística) y `intro_Python/Lectura_*.ipynb` (bases de Python).
 
-### Inferencia Bayesiana
-*   Método bayesiano, funciones paramétricas y simulación.
-*   Distribuciones a priori, a posteriori y conjugadas.
+### Mapa de notebooks (archivo → tema)
 
-### Análisis de Regresión
-*   Regresión lineal múltiple y logística.
-*   Modelos de supervivencia y Regresión de mínimos cuadrados parciales (PLS).
+#### Introducción a Python
+*   `intro_Python/Lectura_Jupyter_Notebook.ipynb` → Jupyter Notebooks (interfaz y flujo de trabajo).
+*   `intro_Python/Lectura_0.ipynb` → Introducción y preparación del entorno (primeros pasos).
+*   `intro_Python/Lectura_1.ipynb` → Ciencia de datos (contexto y conceptos iniciales).
+*   `intro_Python/Lectura_2.ipynb` → Tipos de datos en Python.
+*   `intro_Python/Lectura_3.ipynb` → Caso guiado con datos (aplicación práctica).
+*   `intro_Python/Lectura_4_stud.ipynb` → Estructuras de control.
+*   `intro_Python/Lectura_5_stud.ipynb` → Funciones.
+*   `intro_Python/Lectura_6.ipynb` → Librería `numpy`.
+*   `intro_Python/Lectura_7.ipynb` → Librería `pandas`.
+*   `intro_Python/Lectura_8.ipynb` → Importación/lectura de información.
 
-### Representación gráfica multivariada
-*   Estrellas, glifos, caras de Chernoff, gráficos de perfiles y mapas perceptuales.
-
-### Resumen descriptivo multivariado
-*   Vector de medias, matriz de covarianzas y matriz de correlaciones.
+#### Estadística, inferencia y modelamiento
+*   `Lectura_1_Stats_Descriptiva.ipynb` → Ideas sobre estadística y descriptiva.
+*   `Lectura_2_Histogramas.ipynb` → Histogramas y análisis gráfico univariado.
+*   `Lectura_3_Med_Ten_Cent.ipynb` → Medidas estadísticas (tendencia y dispersión).
+*   `Lectura_4_Data_Categoric.ipynb` → Datos categóricos.
+*   `Lectura_5_Descrip_Biva.ipynb` → Estadística descriptiva bivariada.
+*   `Lectura_6_Probabilidad_stud.ipynb` → Probabilidad.
+*   `Lectura_7_Proba_Condicional.ipynb` → Probabilidad condicional.
+*   `Lectura_8_Variables_Aleatorias_stud.ipynb` → Variables aleatorias.
+*   `Lectura_9_Distribuciones_stud.ipynb` → Distribuciones.
+*   `Lectura_10_Distribuciones_Chi_t_F.ipynb` → Distribuciones Chi-cuadrado, t y F.
+*   `Lectura_11_Inferencia_pruebas_t_Stud.ipynb` → Inferencia y pruebas t (Student).
+*   `Lectura_12_Chi_2_test_stud.ipynb` → Pruebas Chi-cuadrado.
+*   `Lectura_13_Simple_Linear_Regression_stud.ipynb` → Regresión lineal simple.
+*   `Lectura_14_Linear_Regression_Part_I_stud.ipynb` → Regresión lineal (Parte I).
+*   `Lectura_15_Linear_Regression_Part_II.ipynb` → Regresión lineal (Parte II).
+*   `Lectura_16_Linear_Regression_Part_III.ipynb` → Regresión lineal (Parte III).
+*   `Lectura_17_Linear_Regression_Part_IV.ipynb` → Regresión lineal (Parte IV).
+*   `Lectura_18_Logistic_Regression.ipynb` → Regresión logística.
 
 ## 4. Metodología
 
@@ -84,7 +114,7 @@ Este proyecto utiliza **Docker** para garantizar un entorno reproducible.
 
 1.  Clonar el repositorio:
     ```bash
-    git clone <url-del-repositorio>
+    git clone https://github.com/lacamposm/Fundamentos_Analitica
     cd Fundamentos_Analitica
     ```
 
@@ -101,6 +131,7 @@ Este proyecto utiliza **Docker** para garantizar un entorno reproducible.
 ### Estructura de archivos
 
 *   `intro_Python/`: Introducción al lenguaje y conceptos básicos.
-*   `Lecturas/`: Material de estudio y cuadernos principales.
+*   `Lectura_*.ipynb`: Cuadernos principales del curso (estadística e inferencia).
+*   `data/`: Datasets utilizados en los notebooks.
 *   `Dockerfile`: Definición de la imagen del entorno.
 *   `pyproject.toml`: Dependencias del proyecto.
