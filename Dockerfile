@@ -18,6 +18,14 @@ COPY pyproject.toml .
 # Install dependencies using pip
 RUN pip install --no-cache-dir .
 
+# Create user with host UID/GID to avoid permission issues
+ARG USER_ID=1000
+ARG GROUP_ID=1000
+RUN groupadd -g ${GROUP_ID} appuser && \
+    useradd -m -u ${USER_ID} -g ${GROUP_ID} appuser
+
+USER appuser
+
 # Expose port for Jupyter
 EXPOSE 8888
 
