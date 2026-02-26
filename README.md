@@ -135,3 +135,65 @@ Este proyecto utiliza **Docker** para garantizar un entorno reproducible.
 *   `data/`: Datasets utilizados en los notebooks.
 *   `Dockerfile`: Definición de la imagen del entorno.
 *   `pyproject.toml`: Dependencias del proyecto.
+
+
+
+## 7. 🍴 Guía de Fork y Sincronización para Estudiantes
+
+### 7.1 Configuración Inicial (Solo una vez)
+
+1. Haz **Fork** del repositorio del profesor en GitHub hacia tu cuenta.
+2. Clona **tu** copia localmente:
+   ```bash
+   git clone [URL-DE-TU-FORK]
+   ```
+3. Configura el repositorio del profesor como fuente original (`upstream`):
+   ```bash
+   git remote add upstream [URL-DEL-REPOS-PROFESOR]
+   ```
+
+### 7.2 Flujo de Trabajo: Ramas Separadas
+
+> **Regla de oro:** Nunca trabajes sobre la rama `main`. Esta debe ser siempre una copia exacta de la del profesor. Para tus tareas, crea siempre una rama nueva:
+
+```bash
+git checkout -b nombre-de-tu-ejercicio
+```
+
+### 7.3 Sincronizar Cambios del Profesor
+
+Cuando el profesor suba material nuevo, sigue este orden para actualizarte sin perder tu progreso:
+
+**A. Actualiza tu "Fuente de la Verdad" (`main`):**
+
+```bash
+git checkout main
+git pull upstream main
+git push origin main
+```
+
+**B. Lleva los cambios a tu rama de trabajo:**
+
+```bash
+git checkout nombre-de-tu-ejercicio
+git merge main
+```
+
+> 💡 **Nota:** Si hay conflictos al hacer el `merge`, te corresponde a ti resolverlos en tu rama de trabajo.
+
+### 7.4 Verificar Configuración del `upstream`
+
+Para comprobar que tienes bien configurado el `upstream`, ejecuta:
+
+```bash
+git remote -v
+```
+
+Deberías ver algo similar a:
+
+```
+origin    https://github.com/TU-USUARIO/Fundamentos_Analitica.git (fetch)
+origin    https://github.com/TU-USUARIO/Fundamentos_Analitica.git (push)
+upstream  https://github.com/lacamposm/Fundamentos_Analitica.git (fetch)
+upstream  https://github.com/lacamposm/Fundamentos_Analitica.git (push)
+```
