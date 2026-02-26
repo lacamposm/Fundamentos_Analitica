@@ -149,7 +149,7 @@ Este proyecto utiliza **Docker** para garantizar un entorno reproducible.
    ```
 3. Configura el repositorio del profesor como fuente original (`upstream`):
    ```bash
-   git remote add upstream [URL-DEL-REPOS-PROFESOR]
+   git remote add upstream https://github.com/lacamposm/Fundamentos_Analitica.git
    ```
 
 ### 7.2 Flujo de Trabajo: Ramas Separadas
